@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pay With Face</title>
+    <link rel="icon" href="/static/images/favicon (2).ico" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head> 
+<body>
+
+<form action="{{url_for('upload_file')}}" method="POST" >
+  <p style="color:red">Please upload a passport size image(600x600 pixels) </p>
+  <h1><c>Select image to upload:</c></h1>
+  <input type="file" name="fileToUpload" id="fileToUpload">
+  <!input type="submit" value="Upload Image" name="submit">
+  <div class="email">
+    <a href="{{url_for('upload_file')}}">START</a>
+  </div>
+</form>
+</body>
+</html>
