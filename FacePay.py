@@ -169,9 +169,10 @@ def upload_file():
 
 @app.route("/exit")
 def ex():
-    return "You have travelled from subhash nagar to chandni chowk \n total fare = 50Rs"
-    # we can also calculate tha fare according to different stations ID's to the process more simple but for the time being
-    # we have added ha simple statement
+    start = request.form.get("start")
+    end = request.form.get("end")
+    ac_no = request.form.get("Account No")
+    return render_template("ex.html", acc_no = acc_no, start=start, end=end, money ="50", balance="940")
 
 
 if __name__ == '__main__':
