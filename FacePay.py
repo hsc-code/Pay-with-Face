@@ -189,3 +189,4 @@ if __name__ == '__main__':
     encodeListKnown = findEncodings(images)
     print('Encoding Complete')
     app.run(debug=True)
+    HARNEET
